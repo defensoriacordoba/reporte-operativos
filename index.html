@@ -2,49 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Defensoría del Pueblo de Córdoba - Reporte de Operativos</title>
-    
-    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbxixDye71_OYh3Di7CcHH7i7kPsJqUEzYpCBXGp5IU4rYuHQJVJBssugO4GjmUU2M37/exec">
-    
+    <link rel="shortcut icon" type="image/png" href="https://github.com/defensoriacordoba/reporte-operativos/blob/main/Icono.png?raw=true">
     <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Evita el doble rebote al scrollear en celulares */
+            overscroll-behavior-y: none; 
             background-color: #f8fafc;
-            color: #1e293b;
-            text-align: center;
-            padding: 20px;
         }
-        .spinner {
-            border: 4px solid rgba(0,0,0,0.1);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border-left-color: #673ab7;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
-
-    <div class="spinner"></div>
-    <p style="font-weight: 500;">Abriendo Portal de Gestión de Operativos...</p>
-    <small style="color: #64748b; margin-top: 5px;">
-        Si no eres redireccionado automáticamente, 
-        <a href="https://script.google.com/macros/s/AKfycbxixDye71_OYh3Di7CcHH7i7kPsJqUEzYpCBXGp5IU4rYuHQJVJBssugO4GjmUU2M37/exec" style="color: #673ab7; font-weight: bold; text-decoration: none;">haz clic aquí</a>.
-    </small>
-
-    <script>
-        // Redirección inmediata por JavaScript (La vía más rápida en celulares)
-        window.location.href = "https://script.google.com/macros/s/AKfycbxixDye71_OYh3Di7CcHH7i7kPsJqUEzYpCBXGp5IU4rYuHQJVJBssugO4GjmUU2M37/exec";
-    </script>
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbxixDye71_OYh3Di7CcHH7i7kPsJqUEzYpCBXGp5IU4rYuHQJVJBssugO4GjmUU2M37/exec"
+        title="Portal de Gestión"
+        allowfullscreen>
+    </iframe>
 </body>
 </html>
